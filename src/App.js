@@ -6,6 +6,7 @@ import Contact from './Layout/Contact';
 import Layout from './Layout/Layout';
 import Header from './Layout/Header';
 import Payment from './Layout/Payment';
+import Login from './Layout/Login';
 
 function App() {
   return (
@@ -31,6 +32,10 @@ function App() {
       </Route>
       <Route path='/pay'>
         <Payment />
+      </Route>
+
+      <Route path='/login'>
+        <Login />
       </Route>
     </Router>
   );
