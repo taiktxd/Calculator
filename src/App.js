@@ -7,8 +7,15 @@ import Layout from './Layout/Layout';
 import Header from './Layout/Header';
 import Payment from './Layout/Payment';
 import Login from './Layout/Login';
+import Details from './Layout/Details';
+
+
+
 
 function App() {
+  
+
+
   return (
     <Router>
       {/* cách cũ */}
@@ -36,6 +43,12 @@ function App() {
 
       <Route path='/login'>
         <Login />
+      </Route>
+
+      <Route path='/details/:id'>
+        <Layout>
+          <Details />
+        </Layout>
       </Route>
     </Router>
   );

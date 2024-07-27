@@ -13,6 +13,11 @@ const Login = () => {
   const history = useHistory();
   const onSubmit = (data) => {
     if (data) {
+      const userData = {
+        userName: data.userName,
+        password: data.password
+      };
+      localStorage.setItem('userData', JSON.stringify(userData));
       history.push('/');
     }
   };
